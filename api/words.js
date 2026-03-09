@@ -7,7 +7,7 @@ let categorizedWords = null;
 function loadWords() {
   if (categorizedWords) return categorizedWords;
 
-  const filePath = path.join(__dirname, "words.txt");
+  const filePath = path.join(__dirname, 'wordlist.txt');
   const data = fs.readFileSync(filePath, "utf8");
   const allWords = data
     .split(/\r?\n/)
