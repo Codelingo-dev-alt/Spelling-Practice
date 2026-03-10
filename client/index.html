@@ -1,93 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelling Practice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Spelling Practice</h1>
-
-        
-        <div id="setup-area">
-            <p>Enter words or generate them below:</p>
-            <textarea id="word-input" placeholder="e.g. apple, banana, orange"></textarea>
-            
-            <div class="options-grid">
-                <div class="option-item">
-                    <label>Spelling Mode:</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="mode" value="word" checked> Word</label>
-                        <label><input type="radio" name="mode" value="letter"> Letter</label>
-                    </div>
-                </div>
-                <div class="option-item">
-                    <label>Difficulty:</label>
-                    <select id="difficulty-select">
-                        <option value="1">Level 1 (4-5 letters)</option>
-                        <option value="2">Level 2 (6-10 letters)</option>
-                        <option value="3">Level 3 (11+ letters)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="button-group">
-                <button id="generate-btn">Generate Words</button>
-                <button id="start-btn" disabled>Start Practice</button>
-            </div>
-        </div>
-
-        
-        <div id="practice-area" class="hidden">
-            <div id="timer-display" class="timer">Ready...</div>
-            <div class="stats">
-                Word <span id="current-index">0</span> / <span id="total-count">0</span>
-            </div>
-            <div class="practice-box">
-                <input type="text" id="spelling-input" placeholder="Type here..." autocomplete="off">
-                <button id="submit-btn" class="hidden">Submit</button>
-            </div>
-            <div id="feedback" class="feedback"></div>
-        </div>
-
-        
-        <div id="results-area" class="hidden">
-            <h2>Results Summary</h2>
-            <div class="result-stats">
-                <p>Total Words: <span id="res-total">0</span></p>
-                <p>Correct: <span id="res-correct" class="correct-text">0</span></p>
-                <p>Incorrect: <span id="res-incorrect" class="incorrect-text">0</span></p>
-            </div>
-            
-            <div class="table-container">
-                <table id="results-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Word</th>
-                            <th>Your Answer</th>
-                            <th>Result</th>
-                        </tr>
-                    </thead>
-                    <tbody id="results-body"></tbody>
-                </table>
-            </div>
-
-            <div class="result-button-group">
-                <button id="restart-btn">Practice Again</button>
-                <button id="home-btn" class="secondary-btn">Back to Setup</button>
-            </div>
-        </div>
-
-        
-        <div class="footer">
-            <a href="https://t.me/ieltswithAKBAR" target="_blank" rel="noopener noreferrer">
-                Shemukhamedov | 09.03.2026 | @ieltswithAKBAR
-            </a>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>client</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
