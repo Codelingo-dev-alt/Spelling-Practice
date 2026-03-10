@@ -2,5 +2,12 @@
   "name": "spelling-practice",
   "version": "1.0.0",
   "description": "A spelling practice app",
+  "scripts": {
+    "vercel-build": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
   "license": "ISC"
 }
